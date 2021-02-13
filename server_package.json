@@ -1,0 +1,14 @@
+{
+    "name": "docker_js",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "main": "server.js",
+    "license": "MIT",
+    "author": "yukirin",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "4.17.1"
+    }
+}

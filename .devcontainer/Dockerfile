@@ -5,11 +5,9 @@ WORKDIR /usr/src/app
 RUN apk update
 RUN apk --no-cache add git
 
-COPY package.json ./
+COPY server_package.json ./package.json
 RUN npm install
 
-COPY .eslintrc.json ./
-COPY jsconfig.json ./
 COPY server.js  ./
 
 EXPOSE 80
