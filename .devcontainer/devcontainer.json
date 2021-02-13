@@ -1,0 +1,12 @@
+{
+    "name": "docker_js",
+    "context": "..",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [
+        80
+    ],
+    "overrideCommand": false,
+    "mounts": [
+        "source=${localWorkspaceFolder}/src,target=/usr/src/app/public,type=bind,consistency=cached"
+    ]
+}
