@@ -8,5 +8,14 @@
     "overrideCommand": false,
     "mounts": [
         "source=${localWorkspaceFolder}/src,target=/usr/src/app/public,type=bind,consistency=cached"
-    ]
+	],
+	"extensions": [
+		"alefragnani.bookmarks",
+		"dbaeumer.vscode-eslint",
+		"mkaufman.htmlhint",
+		"oderwat.indent-rainbow",
+		"kiteco.kite",
+		"esbenp.prettier-vscode",
+		"visualstudioexptteam.vscodeintellicode"
+	]
 }
