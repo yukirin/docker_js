@@ -5,6 +5,7 @@
     "forwardPorts": [
         80
     ],
+	"workspaceFolder": "/usr/src/app",
     "overrideCommand": false,
     "mounts": [
         "source=${localWorkspaceFolder}/src,target=/usr/src/app/public,type=bind,consistency=cached"
@@ -14,7 +15,6 @@
 		"dbaeumer.vscode-eslint",
 		"mkaufman.htmlhint",
 		"oderwat.indent-rainbow",
-		"kiteco.kite",
 		"esbenp.prettier-vscode",
 		"visualstudioexptteam.vscodeintellicode"
 	]
