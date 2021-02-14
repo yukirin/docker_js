@@ -1,15 +1,7 @@
-FROM node:current-alpine
-
-WORKDIR /usr/src/app
+FROM nginx:stable-alpine
 
 RUN apk update
 RUN apk --no-cache add git
 
-COPY server_package.json ./package.json
-RUN npm install
-
-COPY server.js  ./
-
-EXPOSE 80
-
-CMD ["node", "server.js"]
+RUN apk --no-cache add nodejs npm
+RUN npm set progress=false && npm config set depth 0

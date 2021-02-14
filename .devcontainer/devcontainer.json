@@ -7,7 +7,7 @@
     ],
     "overrideCommand": false,
     "mounts": [
-        "source=${localWorkspaceFolder}/src,target=/usr/src/app/public,type=bind,consistency=cached"
+        "source=${localWorkspaceFolder}/src,target=/usr/share/nginx/html,type=bind,consistency=cached"
 	],
 	"extensions": [
 		"alefragnani.bookmarks",
