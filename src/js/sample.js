@@ -85,3 +85,19 @@ const a = async () => {
 
 a().then((value) => console.log(value));
 console.log("code");
+
+/**
+ * Generator function
+ *
+ * @return {*}
+ */
+function* gene() {
+  yield 1;
+  yield 2;
+  yield 4;
+  return 8;
+}
+
+for (const num of gene()) {
+  console.log(num);
+}
