@@ -54,11 +54,10 @@ class Rabbit extends Animal {
    * @memberof Rabbit
    */
   static staticMethod() {
-    alert(this === Rabbit);
+    console.log(this === Rabbit);
   }
 }
 
 const rabbit = new Rabbit("White Rabbit", 10);
-alert(rabbit.name);
-alert(rabbit.earLength);
+console.log(`name = ${rabbit.name}, earLength = ${rabbit.earLength}`);
 Rabbit.staticMethod();
