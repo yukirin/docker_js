@@ -31,8 +31,15 @@ class Rabbit extends Animal {
   constructor(name, earLength) {
     super(name);
     this.earLength = earLength;
+    this.#pValue = 50;
   }
 
+  /**
+   * private value
+   *
+   * @memberof Rabbit
+   */
+  #pValue = 20;
   /**
    * Static Property
    *
