@@ -77,3 +77,11 @@ promise
     return result * 2;
   })
   .finally(() => console.log("final"));
+
+const a = async () => {
+  console.log("async 1");
+  return 100;
+};
+
+a().then((value) => console.log(value));
+console.log("code");
