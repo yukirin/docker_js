@@ -15,6 +15,7 @@
 		"mkaufman.htmlhint",
 		"oderwat.indent-rainbow",
 		"esbenp.prettier-vscode",
-		"visualstudioexptteam.vscodeintellicode"
+		"visualstudioexptteam.vscodeintellicode",
+		"oouo-diogo-perdigao.docthis"
 	]
 }
