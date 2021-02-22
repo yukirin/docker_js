@@ -32,8 +32,26 @@ class Rabbit extends Animal {
     super(name);
     this.earLength = earLength;
   }
+
+  /**
+   * Static Property
+   *
+   * @static
+   * @memberof Rabbit
+   */
+  static publisher = "aiueo";
+  /**
+   * Static Method
+   *
+   * @static
+   * @memberof Rabbit
+   */
+  static staticMethod() {
+    alert(this === Rabbit);
+  }
 }
 
 const rabbit = new Rabbit("White Rabbit", 10);
 alert(rabbit.name);
 alert(rabbit.earLength);
+Rabbit.staticMethod();
