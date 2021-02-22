@@ -1,9 +1,7 @@
 {
-    "extends": [
-        "google",
-        "eslint-config-prettier"
-    ],
-    "parserOptions": {
-        "ecmaVersion": 2018
-    }
+  "extends": ["google", "eslint-config-prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "parser": "babel-eslint"
 }
