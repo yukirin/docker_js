@@ -61,3 +61,19 @@ class Rabbit extends Animal {
 const rabbit = new Rabbit("White Rabbit", 10);
 console.log(`name = ${rabbit.name}, earLength = ${rabbit.earLength}`);
 Rabbit.staticMethod();
+
+const promise = new Promise((res, rej) => {
+  res(1);
+});
+
+promise
+  .then((result) => {
+    console.log(result);
+    return result * 2;
+  })
+  .catch((err) => console.log(er))
+  .then((result) => {
+    console.log(result);
+    return result * 2;
+  })
+  .finally(() => console.log("final"));
