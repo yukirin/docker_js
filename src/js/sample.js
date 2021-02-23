@@ -120,3 +120,7 @@ async function* asyncGenerator(from, to) {
     console.log(num);
   }
 })();
+
+import { sayHi } from "./sub.js";
+
+sayHi("module test");
