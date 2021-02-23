@@ -4,7 +4,7 @@ const observer = new MutationObserver((mutationRecords) => {
   console.log(mutationRecords);
 });
 
-observer.observe(elem, {
+observer.observe(document.getElementById("elem"), {
   childList: true,
   subtree: true,
   characterData: true,
