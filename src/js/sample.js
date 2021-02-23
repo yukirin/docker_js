@@ -101,3 +101,22 @@ function* gene() {
 for (const num of gene()) {
   console.log(num);
 }
+
+/**
+ * Async Generator
+ *
+ * @param {*} from
+ * @param {*} to
+ */
+async function* asyncGenerator(from, to) {
+  for (let current = from; current <= to; current++) {
+    await new Promise((res) => setTimeout(res, 1000));
+    yield current;
+  }
+}
+
+(async () => {
+  for await (const num of asyncGenerator(2, 10)) {
+    console.log(num);
+  }
+})();
