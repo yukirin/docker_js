@@ -124,3 +124,4 @@ async function* asyncGenerator(from, to) {
 import { sayHi } from "./sub.js";
 
 sayHi("module test");
+console.log(import.meta);
