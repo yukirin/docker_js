@@ -125,3 +125,6 @@ import { sayHi } from "./sub.js";
 
 sayHi("module test");
 console.log(import.meta);
+
+const b = 109834109471239487n;
+console.log(typeof b);
